@@ -97,6 +97,11 @@ header h2 a {
     background-color: #E02C6D;
     margin-top: 20px;
     display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.preebook:hover {
+    background-color: #FB8200;    
 }
 
 i {
