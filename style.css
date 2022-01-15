@@ -20,6 +20,10 @@ li {
     list-style: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 .container-full {
     width: 100%;
     max-width: 1200px;
@@ -53,6 +57,9 @@ header {
 header .display-flex {
     align-items: center;
     justify-content: space-between;
+}
+header h2 {
+    margin: 0;
 }
 
 header h2 a {
@@ -214,4 +221,22 @@ i {
 
 .footer a i {
     margin: 0;
+}
+
+@media (max-width: 600px) {
+    .half-width {
+        width: 100%;
+    }
+
+    header {
+        margin-top: 50px;
+    }
+
+    header .display-flex {
+        justify-content: center;
+    }
+
+    .menu{
+        display: none;
+    }
 }
