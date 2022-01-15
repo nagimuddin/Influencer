@@ -101,6 +101,7 @@ i {
 
 .banner-image {
     text-align: right;
+    margin-top: 50px;
 }
 
 .powerd-by {
@@ -238,5 +239,22 @@ i {
 
     .menu{
         display: none;
+    }
+
+    .banner-section .display-flex {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .banner-image {
+        text-align: center;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .banner-content h1{
+        font-size: 28px;
     }
 }
