@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&family=Yeseva+One&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -181,6 +186,41 @@ i {
 	margin-top: 40px;
 }
 
+/* Blog Area */
+.display-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+}
+
+.blog-area {
+    overflow: hidden;
+}
+
+.blog .thumnail img{
+    width: 177px;
+    height: 117px;
+}
+
+.blog{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 50px 0;
+}
+.blog-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+}
+.blog-author{
+    color: #9F9F9F;
+}
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+}
+
 /* Footer Area */
 .footer {
     background: #0A0826;
@@ -256,5 +296,27 @@ i {
 
     .banner-content h1{
         font-size: 28px;
+    }
+
+    .blog {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .blog .thumnail {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .blog .thumnail img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .blog .blog-info {
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 10px;
     }
 }
