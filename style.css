@@ -1,0 +1,33 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.menu ul li{
+    text-decoration: none;
+}
+.journey{
+    align-items: center;
+    display: flex;
+}
+.title{
+    align-items: center;
+}
+.preebook{
+    color: #FFFFFF;
+    padding: 10px 24px;
+    border-radius: 41px;
+   background-color: #E02C6D;
+    text-decoration: none;
+}
+i{
+    margin-left: 5px;
+    height: 1em;
+}
+.powerd-by{
+    background-color: #AAAAAA;
+    margin-left: 25px;
+    align-items: center;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
